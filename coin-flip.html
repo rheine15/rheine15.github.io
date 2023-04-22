@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body id="page">
+        <h1 id="flip">Click to flip a coin.</h1>
+    </body>
+</html>
+
+<script>
+    document.getElementById('page').onclick = function() {
+        if(Math.random()) {
+            document.getElementById('flip').textContent = "HEADS";
+        } else {
+            document.getElementById('flip').textContent = "TAILS";
+        }
+    }
+</script>
