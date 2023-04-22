@@ -8,24 +8,10 @@
 
 <script>
     document.getElementById('page').onclick = function() {
-        document.getElementById('flip').textContent = ".";
-        wait(300);
-        document.getElementById('flip').textContent = "..";
-        wait(300);
-        document.getElementById('flip').textContent = "...";
         if(Math.round(Math.random())) {
             document.getElementById('flip').textContent = "HEADS";
         } else {
             document.getElementById('flip').textContent = "TAILS";
         }
     }
-
-    // i know this is terrible
-    function wait(ms) {
-            var start = new Date().getTime();
-            var end = start;
-            while (end < start + ms) {
-                end = new Date().getTime();
-            }
-        }
 </script>
